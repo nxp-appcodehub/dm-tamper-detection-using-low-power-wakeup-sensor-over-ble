@@ -1,8 +1,14 @@
 /*
- * fxls89xx_motion_wakeup.h
+ * Copyright 2023 NXP
+ * All rights reserved.
  *
- *  Created on: Jul 23, 2024
- *      Author: nxf80763
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+/**
+ * @file fxls89xx_motion_wakeup.h
+ * @brief The fxls89xx_motion_wakeup.h file details FXLS89xx accelerometer SDCD configuration
+ *        to configure sensor for detecting motion tampering and raise an alert.
  */
 
 #ifndef FXLS89XX_MOTION_WAKEUP_H_

@@ -1,10 +1,15 @@
 /*
- * fxls89xx_motion_wakeup.h
+ * Copyright 2023 NXP
+ * All rights reserved.
  *
- *  Created on: Jul 23, 2024
- *      Author: nxf80763
+ * SPDX-License-Identifier: BSD-3-Clause
  */
 
+/**
+ * @file nmh1000_mag_wakeup.h
+ * @brief The nmh1000_mag_wakeup.h file details NMH1000 magnetic switch sensor
+ *        configuration to detect magnetic tampering and raise an alert.
+ */
 #ifndef NMH1000_MAG_WAKEUP_H_
 #define NMH1000_MAG_WAKEUP_H_
 
