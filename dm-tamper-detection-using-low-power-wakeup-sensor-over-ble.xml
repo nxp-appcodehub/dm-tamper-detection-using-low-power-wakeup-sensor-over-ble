@@ -1,0 +1,30 @@
+<data:item xmlns:data="data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="data ../../xsd/alp.xsd" type="demo" format="projectfile" versionSchema="1.0.0" name="Tamper Detection using low power wakeup sensor over BLE" uuid="3bb073e1-ad26-4b3d-ae00-fdfbe087b27e">
+    <display_title>
+        Tamper detection with low-power wakeup sensor using BLE wireless UART
+    </display_title>
+    <overview>
+        <![CDATA[<ul><li>This example demo describes how to configure low-power motion or magnetic wake-up sensor for tamper/theft detection and transmit ALERT to connected end user via BLE wireless UART using FRDM-MCXW71.</li><li>Such use-case can find many applications where user would like to completely shut off power supply or put the device in power down mode etc. based on magnetic field applied. Examples include, smart meters, shelf labels, reed switch replacement, smart home etc.<br></li></ul>]]>
+    </overview>
+    <toolchains>
+        <toolchain name="mcux"></toolchain>
+    </toolchains>
+    <families>
+        <family name="mcx"></family>
+    </families>
+    <nxp_compatible_hw>
+        <hw id="FRDM-MCXW71"></hw>
+        <hw id="FRDM-MCXW7X"></hw>
+    </nxp_compatible_hw>
+    <nxp_ebh_hw>
+        <ebh id="mikroe_hall_switch_3_click"></ebh>
+    </nxp_ebh_hw>
+    <peripherals>
+        <peripheral name="i2c"></peripheral>
+        <peripheral name="uart"></peripheral>
+    </peripherals>
+    <categories>
+        <category name="low_power"></category>
+        <category name="sensor"></category>
+        <category name="wireless_connectivity"></category>
+    </categories>
+</data:item>
