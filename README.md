@@ -45,7 +45,7 @@ Target applications include:
 
 ## 1. Software<a name="step1"></a>
 - [IoT Sensing SDK (ISSDK) v1.8](https://nxp.com/iot-sensing-sdk) offered as middleware in MCUXpresso SDK for supported platforms
-- MCUXpresso SDKv2.16.0 for FRDM-MCXW71 or newer
+- [MCUXpresso SDKv2.16.0 for FRDM-MCXW71](https://mcuxpresso.nxp.com/en/builder?hw=FRDM-MCXW71) or newer
 - [MCUXpresso IDE v11.10.0](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE)
 - Git v2.39.0
 - [NXP IoT ToolBox App - Android Store](https://play.google.com/store/apps/details?id=com.freescale.kinetisbletoolbox&hl=en_US&pli=1) or
@@ -75,8 +75,10 @@ Target applications include:
 ### 3.2 Software Setup<a name="step3.2"></a>
 
 #### 3.2.1 Step 1: Download and Install required Software(s)
-- Download & Install [MCUXpresso IDE v11.10.0 oe newer](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE)
-- Download and Install MCUXpresso SDKv2.16.0 or newer for FRDM-MCXW71
+- Download and Install [MCUXpresso IDE v11.10.0](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE)<br>
+  - Go to download section and select "Previous" tab.
+  - Search for MCUXpresso IDE v11.10.0 and download.
+- Download and Install [MCUXpresso SDKv2.16.0 for FRDM-MCXW71](https://mcuxpresso.nxp.com/en/builder?hw=FRDM-MCXW71) or newer.
 - Install Git v2.39.0 (for cloning and running west commands)
 - Download and Install [NXP IoT ToolBox App - Android Store](https://play.google.com/store/apps/details?id=com.freescale.kinetisbletoolbox&hl=en_US&pli=1) or
   [NXP IoT ToolBox App - Apple Store](https://apps.apple.com/us/app/iot-toolbox/id1362450908)
