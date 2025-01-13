@@ -66,7 +66,7 @@ Target applications include:
 - The FRDM-MCXW71 board comes with pre-flashed code in Narrow Band Unit (NBU) for the radio core.
 - In case you need to reflash the NBU firmware, please follow instructions available at:<br>
   [Flash NBU Firmware on FRDM-MCXW71](https://community.nxp.com/t5/MCX-W71-Training-Secure-MCUs-for/FRDM-MCXW71-Hands-On-1-NBU-and-User-Firmware-Update-Using-ISP/ta-p/1970154)<br>
-  [Check NBU Incompatible Versions](https://community.nxp.com/t5/MCX-W71-Training-Secure-MCUs-for/FRDM-MXCW71-Hands-On-2-Recognize-NBU-Incompatible-Versions/ta-p/1970129
+  [Check NBU Incompatible Versions](https://community.nxp.com/t5/MCX-W71-Training-Secure-MCUs-for/FRDM-MXCW71-Hands-On-2-Recognize-NBU-Incompatible-Versions/ta-p/1970129)
 
 #### 3.1.2 Step 2: Connect to host computer
 - Connect a micro USB cable from connector MCU-LINK to a host computer.
