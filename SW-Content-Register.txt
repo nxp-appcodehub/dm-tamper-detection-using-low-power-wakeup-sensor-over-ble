@@ -1,8 +1,8 @@
 Package:              dm-tamper-detection-using-low-power-wakeup-sensor-over-ble
-Version:              1.0
+Version:              1.1
 Outgoing License:     LA_OPT_Online Code Hosting NXP_Software_License - v1.2 October 2023
 License file:         License.txt
-Description:          This example demo describes how to configure low-power motion or magnetic wake-up sensor for tamper/theft detection and transmit ALERT to connected end user via BLE wireless UART.
+Description:          This example demo describes how to configure low-power motion or magnetic or pressure change wake-up sensor for tamper/theft detection and transmit ALERT to connected end user via BLE wireless UART.
 Release location:     https://github.com/dm-tamper-detection-using-low-power-wakeup-sensor-over-ble
 Origin:               NXP (proprietary)
                       NXP (BSD-3-Clause)
