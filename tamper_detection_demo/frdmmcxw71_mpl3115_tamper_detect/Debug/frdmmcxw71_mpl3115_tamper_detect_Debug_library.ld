@@ -6,7 +6,7 @@
  * Generated linker script file for MCXW716CxxxA
  * Created from library.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.10.0 [Build 3148] [2024-07-03] on Jan 22, 2025, 2:06:13 PM
+ * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on May 7, 2025, 1:25:29 PM
  */
 
 GROUP (

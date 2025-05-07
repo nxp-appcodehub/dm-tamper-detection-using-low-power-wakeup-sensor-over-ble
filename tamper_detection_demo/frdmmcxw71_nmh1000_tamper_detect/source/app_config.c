@@ -68,7 +68,7 @@ static gapAdStructure_t advScanStruct[3] = {
   {
     .adType = gAdShortenedLocalName_c,
     .length = 7,
-    .aData = (uint8_t*)"NXP_WU"
+    .aData = (uint8_t*)"NXP_M0"
   }
 };
 

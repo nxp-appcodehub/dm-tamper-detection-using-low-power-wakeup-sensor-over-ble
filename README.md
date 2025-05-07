@@ -3,31 +3,31 @@
 
 ## Tamper detection with low-power wakeup sensor using BLE wireless UART
 
-- This example use FRDM-MCXW71 and on-board FXLS8974CF accelerometer or NMH1000 magnetic switch using Hall Switch 3 click expansion board or MPL3115 pressure sensor using FRDMSTBC-P3115 expansion board to demonstrate autonomous detection of tampering/theft/abuse on device using low-power motion or magnetic wakeup feature and trasmit ALERT message via BLE wireless UART.
+- This example use FRDM-MCXW71 and on-board FXLS8974CF accelerometer or NMH1000 magnetic switch or MPL3115 pressure sensor to demonstrate autonomous detection of tampering/theft/abuse on device using low-power motion or magnetic wakeup feature and trasmit ALERT message via BLE wireless UART.
 
 - [FXLS8974CF](https://www.nxp.com/part/FXLS8974CF) is 3-axis accelerometer targeted for application requiring low-power motion wake up. This sensor has SDCD embedded block which implements an efficient and flexible inertial event detection function to detect various inertial events like no-motion/motion detecting tamper/theft/abuse on an asset. This ultra-low power wake-up on motion can trigger host MCU to wake-up or go back to deep sleep mode when no motion detected autonomously.<br><br>
   The image below shows SDCD block configuration to detection No-Motion to Motion:<br><br>
   [<img src="./images/SDCD_NoMotion_Motion.png" width="900"/>](SDCD_NoMotion_Motion.png)<br>
 
-- [NMH1000](https://www.nxp.com/products/sensors/magnetic-sensors/nmh1000-ultra-low-power-and-low-voltage-magnetic-switch:NMH1000) is an ultra-low power monolithic Hall effect magnetic field sensor that triggers an output when surrounding magnetic field is greater than the user-defined detection threshold. It can find lots of applications requiring change in magnetic field strength to wake-up and raise interrupt to wake-up host MCU/System.
+- [NMH1000](https://www.nxp.com/products/sensors/magnetic-sensors/nmh1000-ultra-low-power-and-low-voltage-magnetic-switch:NMH1000) is an ultra-low power monolithic Hall effect magnetic field sensor that triggers an output when surrounding magnetic field is greater than the user-defined detection threshold. It can find lots of applications requiring change in magnetic field strength to wake-up and raise interrupt to wake-up host MCU/System.<br><br>
 
-- [MPL3115A2S](https://www.nxp.com/products/MPL3115A2) is an compact piezoresistive absolute pressure sensor that can detect change in pressure when is greater than the user-defined detection threshold. It can find lots of applications requiring change in magnetic field strength to wake-up and raise interrupt to wake-up host MCU/System.
+- [MPL3115A2S](https://www.nxp.com/products/MPL3115A2) is an compact piezoresistive absolute pressure sensor that can detect change in pressure when is greater than the user-defined detection threshold. It can find lots of applications requiring change in magnetic field strength to wake-up and raise interrupt to wake-up host MCU/System.<br><br>
 
 - There are many applications where user would like to detect unwanted, intentional touch or damage/abuse or act of theft on their high value/secure assets at home and/or workplace environment. Target applications include:
   - Smart meters tampering,
   - Home security, Safebox/locker tampering
   - Personal medical device abuse, personal laptop/tablets tamper/theft
   - Warehouse theft detection, machine tampering,
-  - Door open/close detection etc.
+  - Door open/close detection etc.<br><br>
 
 - This example demonstrates ease-of-enablement using NXP's FRDM-MCXW71/7x and sensors development ecosystem to accelerate prototyping for your multiple such applications.
 
 
 > #### Boards: FRDM-MCXW71, FRDM-MCXW7X
-> #### Accessories: On-Board Accelerometer FXLS8974CF, mikroe_hall_switch_3_click, nxp_frdmstbc_p3115
+> #### Accessories: On-Board Accelerometer FXLS8974CF, mikroe_hall_switch_3_click, nxp_frdmstbc_p3115, nxp_frdm_stbi_nmh1000, mikroe_accel_pressure_click.
 > #### Categories: Low Power, Sensor, Wireless Connectivity
 > #### Peripherals: I2C, UART
-> #### Toolchains: MCUXpresso IDE
+> #### Toolchains: MCUXpresso IDE, VS Code
 
 ## Table of Contents
 1. [Software](#step1)
@@ -40,20 +40,23 @@
 6. [Support](#step6)
 
 ## 1. Software<a name="step1"></a>
+- [MCUXpresso IDE v24.12.148](https://nxp.flexnetoperations.com/control/frse/product?entitlementId=204214877&lineNum=1&authContactId=77407347&authPartyId=65613967)
+- [MCUXpresso SDK v25.03.00 for FRDM-MCXW71](https://mcuxpresso.nxp.com/en/builder?hw=FRDM-MCXW71)
 - [IoT Sensing SDK (ISSDK) v1.8](https://nxp.com/iot-sensing-sdk) offered as middleware in MCUXpresso SDK for supported platforms
-- MCUXpresso SDKv2.16.0 for FRDM-MCXW71 or newer
-- [MCUXpresso IDE v11.10.0](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE)
 - Git v2.39.0
 - [NXP IoT ToolBox App - Android Store](https://play.google.com/store/apps/details?id=com.freescale.kinetisbletoolbox&hl=en_US&pli=1) or
   [NXP IoT ToolBox App - Apple Store](https://apps.apple.com/us/app/iot-toolbox/id1362450908)
 
 ## 2. Hardware<a name="step2"></a>
 - [FRDM-MCXW71/7x](https://www.nxp.com/part/FRDM-MCXW71) MCU board with on-board FXLS8974CF accelerometer
-- [Hall Switch 3 Click](https://www.mikroe.com/hall-switch-3-click) expansion board for NMH1000 magnetic switch sensor
-- [FRDMSTBC-P3115](https://www.nxp.com/part/FRDMSTBC-P3115) expansion board for MPL3115 absolute pressure sensor.
+- [FRDMSTBC-P3115](https://www.nxp.com/part/FRDMSTBC-P3115) Arduino expansion board for MPL3115 absolute pressure sensor.
+- [FRDMSTBI-NMH1000](https://www.nxp.com/part/FRDMSTBI-NMH1000) Arduino expansion board for NMH1000 magnetic switch sensor.
+- [Hall Switch 3 Click](https://www.mikroe.com/hall-switch-3-click) Click expansion board for NMH1000 magnetic switch sensor
+- [Accel & Pressure Click](https://www.mikroe.com/accelpressure-click) Click expansion board for MPL3115 absolute pressure sensor.
 - Personal Computer
 - Mini/micro C USB cable
 - Android or Apple Mobile Phone supprting BLE wireless connectivity.
+- A magnet.
 
 ## 3. Setup<a name="step3"></a>
 
@@ -67,14 +70,14 @@
 
 #### 3.1.2 Step 2: Connect to host computer
 - Connect a micro USB cable from connector MCU-LINK to a host computer.
-- For running tamper detection using NMH1000 magnetic switch sensor, connect Hall Switch 3 click board to FRDM-MCXW71 MCU board.
-- For running tamper detection using MPL3115 pressure sensor, connect FRDMSTBC-P3115 board to FRDM-MCXW71 MCU board. Make sure to connect J7 and J8 pins 1-2 on FRDM-STBC-P3115 shield board.
+- For running tamper detection using NMH1000 magnetic switch sensor, connect FRDMSTBI-NMH1000 shield board or Hall Switch 3 click board to FRDM-MCXW71 MCU board.
+- For running tamper detection using MPL3115 pressure sensor, connect FRDMSTBC-P3115 shield board or Accel&Pressure click board to FRDM-MCXW71 MCU board. Make sure to connect J7 and J8 pins 1-2 on FRDM-STBC-P3115 shield board.
 
 ### 3.2 Software Setup<a name="step3.2"></a>
 
 #### 3.2.1 Step 1: Download and Install required Software(s)
-- Download & Install [MCUXpresso IDE v11.10.0 or newer](https://www.nxp.com/design/design-center/software/development-software/mcuxpresso-software-and-tools-/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE)
-- Download and Install MCUXpresso SDKv2.16.0 or newer for FRDM-MCXW71
+- Download & Install [MCUXpresso IDE v24.12.148 ](https://nxp.flexnetoperations.com/control/frse/product?entitlementId=204214877&lineNum=1&authContactId=77407347&authPartyId=65613967)
+- Download and Install [MCUXpresso SDK v25.03.00 for FRDM-MCXW71](https://mcuxpresso.nxp.com/en/builder?hw=FRDM-MCXW71)
 - Install Git v2.39.0 (for cloning and running west commands)
 - Download and Install [NXP IoT ToolBox App - Android Store](https://play.google.com/store/apps/details?id=com.freescale.kinetisbletoolbox&hl=en_US&pli=1) or
   [NXP IoT ToolBox App - Apple Store](https://apps.apple.com/us/app/iot-toolbox/id1362450908)
@@ -86,7 +89,7 @@
 
 #### 3.2.3 Step 3: Build example projects
 - Open MCUXpresso IDE and select a directory to create your workspace.
-- Install MCXUpresso SDK 2.16.0 for FRDM-MCXW71 (drag and drop SDK zip into "Installed SDK" view) into MCUXpresso IDE.
+- Install MCXUpresso SDK v25.03.00 for FRDM-MCXW71 (drag and drop SDK zip into "Installed SDK" view) into MCUXpresso IDE.
 - Go to "Quickstart Panel" and click on "Import Project(s) from file system",
 - Select "Project directory (unpacked)" and browse to the cloned project folder.
 - Select example project ("frdmmcxw71_fxls8974_tamper_detect" or "frdmmcxw71_nmh1000_tamper_detect" or "frdmmcxw71_mpl3115_tamper_detect") that you want to open and run.

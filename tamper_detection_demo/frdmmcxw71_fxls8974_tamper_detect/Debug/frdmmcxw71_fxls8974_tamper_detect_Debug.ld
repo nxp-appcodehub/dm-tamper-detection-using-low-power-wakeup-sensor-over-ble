@@ -1,11 +1,12 @@
 /*
  * GENERATED FILE - DO NOT EDIT
  * Copyright 2008-2013 Code Red Technologies Ltd,
- * Copyright 2013-2024 NXP
+ * Copyright 2013-2025 NXP
+ * SPDX-License-Identifier: BSD-3-Clause
  * Generated linker script file for MCXW716CxxxA
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.10.0 [Build 3148] [2024-07-03] on Aug 7, 2024, 11:56:56 AM
+ * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on May 7, 2025, 1:23:14 PM
  */
 
 INCLUDE "frdmmcxw71_fxls8974_tamper_detect_Debug_library.ld"
