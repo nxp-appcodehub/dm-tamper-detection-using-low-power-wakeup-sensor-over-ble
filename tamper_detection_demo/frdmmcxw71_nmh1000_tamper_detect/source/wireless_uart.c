@@ -295,9 +295,9 @@ uint8_t vec_sensor_succ[70] =	"\r\n Successfully Applied NMH1000 Sensor Configur
 
 uint8_t vec_read_failed[70] =	"\r\n Read Failed. \r\n";
 
-uint8_t vec_mag_start[70] =	"\r\n ===============!!ALERT!!==================";
+uint8_t vec_mag_start[70] =	"\r\n =============!!ALERT!!=================";
 uint8_t vec_mag_dec[70] =	"\r\n Magnetic Tampering Detected on your Asset";
-uint8_t vec_mag_end[70] =	"\r\n ===============!!ALERT!!==================\r\n";
+uint8_t vec_mag_end[70] =	"\r\n =============!!ALERT!!=================\r\n";
 
 uint8_t vec_ASLP[70] =		"\r\n Your Asset is Safe\r\n";
 uint8_t sleeptowake = 0;

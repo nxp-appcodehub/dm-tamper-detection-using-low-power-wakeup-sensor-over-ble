@@ -323,9 +323,9 @@ uint8_t performing_avg[70] =	"\r\n Perform averaging to get reference/baseline p
 uint8_t show_avg_status[70] =	"  *";
 uint8_t pressure_value[70] =	"\r\n\r\n Reference Pressure    = %d Pa\r\n\r\n";
 
-uint8_t pressure_alert1[70] =	"\r\n ===============!!ALERT!!==================";
+uint8_t pressure_alert1[70] =	"\r\n =============!!ALERT!!=================";
 uint8_t pressure_tamper[70] =	"\r\n Pressure Tampering Detected on your Asset";
-uint8_t pressure_alert2[70] =	"\r\n ===============!!ALERT!!==================\r\n";
+uint8_t pressure_alert2[70] =	"\r\n =============!!ALERT!!=================\r\n";
 uint8_t normal_pressure[70] =	"\r\n Your Asset is Safe\r\n";
 
 uint8_t status_ble = 1;
