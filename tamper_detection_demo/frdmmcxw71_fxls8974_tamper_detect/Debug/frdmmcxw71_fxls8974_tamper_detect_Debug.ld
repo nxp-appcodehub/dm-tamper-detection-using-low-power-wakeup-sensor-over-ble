@@ -6,7 +6,7 @@
  * Generated linker script file for MCXW716CxxxA
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on May 7, 2025, 1:23:14 PM
+ * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on May 19, 2025, 10:16:08 AM
  */
 
 INCLUDE "frdmmcxw71_fxls8974_tamper_detect_Debug_library.ld"

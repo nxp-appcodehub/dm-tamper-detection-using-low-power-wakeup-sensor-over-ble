@@ -6,7 +6,7 @@
  * Generated linker script file for MCXW716CxxxA
  * Created from memory.ldt by FMCreateLinkMemory
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on May 7, 2025, 1:28:37 PM
+ * MCUXpresso IDE v24.12 [Build 148] [2025-01-10] on May 19, 2025, 11:05:40 AM
  */
 
 MEMORY
