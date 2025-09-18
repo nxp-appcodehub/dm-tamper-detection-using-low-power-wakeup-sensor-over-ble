@@ -29,6 +29,14 @@
 > #### Peripherals: I2C, UART
 > #### Toolchains: MCUXpresso IDE, VS Code
 
+## Refer to Getting Started Guide
+- For detailed, step-by-step instructions to setup and run these examples, please refer to the Getting Started guides. 
+- Getting Started guides are available under docs/ folder:
+  - [Getting Started for Example#1](docs/GettingStarted_Example1.pdf)
+  - [Getting Started for Example#2](docs/GettingStarted_Example2.pdf)
+  - [Getting Started for Example#3](docs/GettingStarted_Example3.pdf)
+- Summary of the step-by-step instructions are provided below.
+
 ## Table of Contents
 1. [Software](#step1)
 2. [Hardware](#step2)
